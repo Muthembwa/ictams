@@ -127,12 +127,12 @@ class AssetPresenter extends Presenter
                 "title" => trans('general.manufacturer'),
                 "visible" => false,
                 "formatter" => "manufacturersLinkObjFormatter"
-            ],[
+            ],/*[
                 "field" => "supplier",
                 "searchable" => true,
                 "sortable" => true,
                 "title" => trans('general.supplier'),
-                "visible" => false,
+                "visible" => false, 
                 "formatter" => "suppliersLinkObjFormatter"
             ], [
                 "field" => "purchase_date",
@@ -161,7 +161,8 @@ class AssetPresenter extends Presenter
                 "visible" => false,
                 "title" => trans('general.eol'),
                 "formatter" => "dateDisplayFormatter"
-            ], [
+            ], **/
+            [
                 "field" => "warranty_months",
                 "searchable" => true,
                 "sortable" => true,
