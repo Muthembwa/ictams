@@ -9,7 +9,7 @@
 {{-- Right header --}}
 @section('header_right')
 
-    
+    <!-- Action dropdown -->
     @can('manage', \App\Models\Asset::class)
         @if ($asset->deleted_at=='')
         <div class="dropdown pull-right">
@@ -452,7 +452,7 @@
                                         @endforeach
                                     @endif
 
-
+<!--
                                     @if ($asset->purchase_date)
                                         <div class="row">
                                             <div class="col-md-2">
@@ -485,7 +485,7 @@
 
                                             </div>
                                         </div>
-                                    @endif
+                                    @endif 
                                     @if (($asset->model) && ($asset->depreciation))
                                         <div class="row">
                                             <div class="col-md-2">
@@ -629,7 +629,7 @@
                                             </div>
                                         </div>
                                     @endif
-
+-->
                                     @if ($asset->expected_checkin!='')
                                         <div class="row">
                                             <div class="col-md-2">
