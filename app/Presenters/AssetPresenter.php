@@ -161,7 +161,7 @@ class AssetPresenter extends Presenter
                 "visible" => false,
                 "title" => trans('general.eol'),
                 "formatter" => "dateDisplayFormatter"
-            ], **/
+            ], 
             [
                 "field" => "warranty_months",
                 "searchable" => true,
@@ -175,7 +175,8 @@ class AssetPresenter extends Presenter
                 "visible" => false,
                 "title" => trans('admin/hardware/form.warranty_expires'),
                 "formatter" => "dateDisplayFormatter"
-            ],[
+            ],**/
+            [
                 "field" => "notes",
                 "searchable" => true,
                 "sortable" => true,
