@@ -79,6 +79,7 @@
                 {{ trans('admin/hardware/table.serial') }}
               </label>
             </div>
+            <!--
             <div class="checkbox col-md-12">
               <label>
                 {{ Form::checkbox('purchase_date', '1', '1', ['class' => 'minimal']) }}
@@ -108,7 +109,7 @@
                 {{ Form::checkbox('supplier', '1', '1', ['class' => 'minimal']) }}
                 {{ trans('general.suppliers') }}
               </label>
-            </div>
+            </div> -->
             <div class="checkbox col-md-12">
               <label>
                 {{ Form::checkbox('location', '1', '1', ['class' => 'minimal']) }}
@@ -142,7 +143,7 @@
                 {{ trans('general.status') }}
               </label>
             </div>
-            <div class="checkbox col-md-12">
+           <!-- <div class="checkbox col-md-12">
               <label>
                 {{ Form::checkbox('warranty', '1', '1', ['class' => 'minimal']) }}
                 {{ trans('admin/hardware/form.warranty') }}
@@ -153,7 +154,7 @@
                 {{ Form::checkbox('depreciation', '1', '1', ['class' => 'minimal']) }}
                 {{ trans('general.depreciation') }}
               </label>
-            </div>
+            </div> -->
             <div class="checkbox col-md-12">
               <label>
                 {{ Form::checkbox('checkout_date', '1', '1', ['class' => 'minimal']) }}
@@ -268,7 +269,7 @@
             @include ('partials.forms.edit.location-select', ['translated_name' => trans('general.location'), 'fieldname' => 'by_location_id', 'hide_new' => 'true'])
             @include ('partials.forms.edit.location-select', ['translated_name' => trans('admin/hardware/form.default_location'), 'fieldname' => 'by_rtd_location_id', 'hide_new' => 'true'])
           @include ('partials.forms.edit.department-select', ['translated_name' => trans('general.department'), 'fieldname' => 'by_dept_id', 'hide_new' => 'true'])
-            @include ('partials.forms.edit.supplier-select', ['translated_name' => trans('general.supplier'), 'fieldname' => 'by_supplier_id', 'hide_new' => 'true'])
+           <!-- @include ('partials.forms.edit.supplier-select', ['translated_name' => trans('general.supplier'), 'fieldname' => 'by_supplier_id', 'hide_new' => 'true'])-->
             @include ('partials.forms.edit.model-select', ['translated_name' => trans('general.asset_model'), 'fieldname' => 'by_model_id', 'hide_new' => 'true'])
             @include ('partials.forms.edit.manufacturer-select', ['translated_name' => trans('general.manufacturer'), 'fieldname' => 'by_manufacturer_id', 'hide_new' => 'true'])
             @include ('partials.forms.edit.category-select', ['translated_name' => trans('general.category'), 'fieldname' => 'by_category_id', 'hide_new' => 'true', 'category_type' => 'asset'])
@@ -282,15 +283,15 @@
             </div>
 
 
-            <!-- Order Number -->
+            <!-- Order Number 
             <div class="form-group">
               <label for="by_order_number" class="col-md-3 control-label">{{ trans('general.order_number') }}</label>
               <div class="col-md-5 col-sm-8">
                 <input class="form-control" type="text" name="by_order_number" value="" aria-label="by_order_number">
               </div>
             </div>
-
-          <!-- Purchase Date -->
+            -->
+          <!-- Purchase Date 
             <div class="form-group purchase-range">
               <label for="purchase_start" class="col-md-3 control-label">{{ trans('general.purchase_date') }} Range</label>
               <div class="input-daterange input-group col-md-6" id="datepicker">
@@ -299,8 +300,8 @@
                 <input type="text" class="input-sm form-control" name="purchase_end" aria-label="purchase_end">
               </div>
             </div>
-
-            <!-- Created Date -->
+-->
+            <!-- Created Date --> 
             <div class="form-group purchase-range">
               <label for="created_start" class="col-md-3 control-label">{{ trans('general.created_at') }} Range</label>
               <div class="input-daterange input-group col-md-6" id="datepicker">
