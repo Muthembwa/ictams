@@ -117,7 +117,8 @@ class AssetAuditPresenter extends Presenter
                 "title" => trans('general.manufacturer'),
                 "visible" => false,
                 "formatter" => "manufacturersLinkObjFormatter"
-            ], [
+            ], 
+            /**[
                 "field" => "purchase_date",
                 "searchable" => true,
                 "sortable" => true,
@@ -158,7 +159,8 @@ class AssetAuditPresenter extends Presenter
                 "visible" => false,
                 "title" => trans('admin/hardware/form.warranty_expires'),
                 "formatter" => "dateDisplayFormatter"
-            ],[
+            ],
+            **/[
                 "field" => "notes",
                 "searchable" => true,
                 "sortable" => true,
