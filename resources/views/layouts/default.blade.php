@@ -658,13 +658,7 @@
                             </li>
                         @endcan
 
-                        @can('view', \App\Models\Depreciation::class)
-                            <li>
-                                <a href="{{ route('depreciations.index') }}" {{ (Request::is('/depreciations') ? ' class="active"' : '') }}>
-                                    {{ trans('general.depreciation') }}
-                                </a>
-                            </li>
-                        @endcan
+                       
 
                     </ul>
 
@@ -689,11 +683,7 @@
                     <li><a href="{{ route('reports.audit') }}" {{ (Request::is('reports.audit') ? ' class="active"' : '') }}>
                             {{ trans('general.audit_report') }}</a>
                     </li>
-                    <li>
-                        <a href="{{ url('reports/depreciation') }}" {{ (Request::is('reports/depreciation') ? ' class="active"' : '') }}>
-                            {{ trans('general.depreciation_report') }}
-                        </a>
-                    </li>
+                  
                     <li>
                         <a href="{{ url('reports/licenses') }}" {{ (Request::is('reports/licenses') ? ' class="active"' : '') }}>
                             {{ trans('general.license_report') }}
