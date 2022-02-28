@@ -626,14 +626,6 @@
                             </li>
                         @endcan
 
-                        @can('view', \App\Models\Supplier::class)
-                            <li>
-                                <a href="{{ route('suppliers.index') }}" {{ (Request::is('/suppliers') ? ' class="active"' : '') }}>
-                                    {{ trans('general.suppliers') }}
-                                </a>
-                            </li>
-                        @endcan
-
                         @can('view', \App\Models\Department::class)
                             <li>
                                 <a href="{{ route('departments.index') }}" {{ (Request::is('/departments') ? ' class="active"' : '') }}>
