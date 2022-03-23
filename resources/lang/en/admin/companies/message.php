@@ -1,18 +1,18 @@
 <?php
 return array(
-    'does_not_exist' => 'Company does not exist.',
-    'assoc_users'    => 'This company is currently associated with at least one model and cannot be deleted. Please update your models to no longer reference this company and try again. ',
+    'does_not_exist' => 'Office does not exist.',
+    'assoc_users'    => 'This office is currently associated with at least one model and cannot be deleted. Please update your models to no longer reference this office and try again. ',
     'create' => array(
-        'error'   => 'Company was not created, please try again.',
-        'success' => 'Company created successfully.'
+        'error'   => 'Office was not created, please try again.',
+        'success' => 'Office created successfully.'
     ),
     'update' => array(
-        'error'   => 'Company was not updated, please try again',
-        'success' => 'Company updated successfully.'
+        'error'   => 'Office was not updated, please try again',
+        'success' => 'Office updated successfully.'
     ),
     'delete' => array(
-        'confirm' => 'Are you sure you wish to delete this company?',
-        'error'   => 'There was an issue deleting the company. Please try again.',
-        'success' => 'The Company was deleted successfully.'
+        'confirm' => 'Are you sure you wish to delete this office?',
+        'error'   => 'There was an issue deleting the office. Please try again.',
+        'success' => 'The Office was deleted successfully.'
     )
 );
