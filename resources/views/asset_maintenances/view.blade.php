@@ -51,12 +51,12 @@ use Carbon\Carbon;
             {{ $assetMaintenance->asset->name }}
           </a>
         </div>
-        <div class="col-md-3 col-sm-3" style="padding-bottom: 10px; margin-left: 15px; word-wrap: break-word;">
+        <!--<div class="col-md-3 col-sm-3" style="padding-bottom: 10px; margin-left: 15px; word-wrap: break-word;">
           <strong>{{ trans('general.supplier') }}: </strong>
           <a href="{{ route('suppliers.show', $assetMaintenance->supplier_id) }}">
             {{ $assetMaintenance->supplier->name }}
           </a>
-        </div>
+        </div>-->
       </div>
       <!-- 2nd Row End -->
       <!-- 3rd Row Begin -->
@@ -78,7 +78,7 @@ use Carbon\Carbon;
       </div>
       <!-- 3rd Row End -->
       <!-- 4th Row Begin -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col-md-3 col-sm-3" style="padding-bottom: 10px; margin-left: 15px; word-wrap: break-word;">
           <strong>{{ trans('admin/asset_maintenances/form.cost') }}: </strong>
           {{ trans( 'general.currency' ) . Helper::formatCurrencyOutput($assetMaintenance->cost) }}
@@ -87,7 +87,7 @@ use Carbon\Carbon;
           <strong>{{ trans('admin/asset_maintenances/form.is_warranty') }}: </strong>
           {{ $assetMaintenance->is_warranty ? trans('admin/asset_maintenances/message.warranty') : trans('admin/asset_maintenances/message.not_warranty') }}
         </div>
-      </div>
+      </div>-->
       <!-- 4th Row End -->
       <!-- 5th Row Begin -->
       <div class="row">

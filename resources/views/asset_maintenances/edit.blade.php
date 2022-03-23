@@ -42,7 +42,7 @@
 
       <div class="box-body">
         @include ('partials.forms.edit.asset-select', ['translated_name' => trans('admin/hardware/table.asset_tag'), 'fieldname' => 'asset_id', 'required' => 'true'])
-        @include ('partials.forms.edit.supplier-select', ['translated_name' => trans('general.supplier'), 'fieldname' => 'supplier_id', 'required' => 'true'])
+       
         @include ('partials.forms.edit.maintenance_type')
 
         <!-- Title -->
@@ -84,7 +84,7 @@
           </div>
         </div>
 
-        <!-- Warranty -->
+        <!-- Warranty 
         <div class="form-group">
           <div class="col-sm-offset-3 col-sm-9">
             <div class="checkbox">
@@ -93,10 +93,10 @@
               </label>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Asset Maintenance Cost -->
-        <div class="form-group {{ $errors->has('cost') ? ' has-error' : '' }}">
+       <!--  <div class="form-group {{ $errors->has('cost') ? ' has-error' : '' }}">
           <label for="cost" class="col-md-3 control-label">{{ trans('admin/asset_maintenances/form.cost') }}</label>
           <div class="col-md-2">
             <div class="input-group">
@@ -112,6 +112,7 @@
             </div>
           </div>
         </div>
+        -->
 
         <!-- Notes -->
         <div class="form-group {{ $errors->has('notes') ? ' has-error' : '' }}">
